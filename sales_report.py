@@ -45,12 +45,12 @@ def get_melons_sales(filename):
         line = line.rstrip()
         salesperson, total_sale, melons_sold = line.split("|")
 
-        sales[salesperson] = melons_sold
+        if salesperson in sales:
+            sales[salesperson] += int(melons_sold)
+        else:
+            sales[salesperson] = int(melons_sold)
 
-        """ Tried adding total value and total amount 
-        
-        to the dictinonary as a list
-        """
+        ## Tried adding total value and total amount to the dictinonary as a list ##
 
         # for salesperson, reports in sales.item():
         #     print(salesperson).upper()
