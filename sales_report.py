@@ -28,7 +28,8 @@ for i in range(len(salespeople)):  # printing the file
 
 """
 Improvements:
-    - Define a function for the whole process
+    - Define a functions for the whole process
     - Instead of using list, use dictionaries
+    - Pass the file as an argument
 
 """
